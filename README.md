@@ -18,5 +18,5 @@ This project is a simple HTTP server implemented in Python. It is designed to ha
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/http-server.git](https://github.com/MinhTran1506/https_server.git
+git clone https://github.com/MinhTran1506/https_server.git
 cd http_server
