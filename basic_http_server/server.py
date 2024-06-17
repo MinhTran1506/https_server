@@ -11,7 +11,7 @@ class TCPServer:
     def __init__(self, host='127.0.0.1', port=8888):
         self.host = host
         self.port = port
-
+        self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     def start(self):
         """Method for starting the server"""
 
@@ -40,6 +40,9 @@ class TCPServer:
         Override this in subclass.
         """
         return data
+    
+    def stop(self):
+        self.server_socket.close()
 
 
 class HTTPServer(TCPServer):
